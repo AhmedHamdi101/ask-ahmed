@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed Abdelmaguid — Research Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>Ahmed Abdelmaguid</h1>
+      <p>PhD Student • University of California, Riverside • RAG, GNNs, ML Systems</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="container grid">
+      <section id="about" class="card">
+        <h2>About Me</h2>
+        <p>
+          I am a PhD student in Computer Science at the Bourns College of Engineering, University of California,
+          Riverside (started October 2024). My work focuses on retrieval-augmented generation (RAG), graph machine
+          learning, and scalable data systems.
+        </p>
+        <p>
+          I am open for Summer 2026 full-time research/internship opportunities (June 13, 2026 to September 23, 2026).
+        </p>
+      </section>
+
+      <section id="research" class="card">
+        <h2>Research</h2>
+        <ul>
+          <li>RAG over heterogeneous sources (text, SQL, knowledge graphs, vector DBs, APIs).</li>
+          <li>Prompt decomposition and retrieval routing for multi-source QA systems.</li>
+          <li>Hotspot detection in large-scale graphs using GNN-based models.</li>
+        </ul>
+      </section>
+
+      <section id="publications" class="card">
+        <h2>Publications</h2>
+        <ul>
+          <li>
+            <strong>SOLAR</strong> (ICDE 2026): Scalable Distributed Spatial Joins through Learning-based Optimization.
+          </li>
+          <li>
+            <strong>AraEGI</strong> (IEEE-ISCC 2024): Arabic Gender Identification Using Transformers for Egyptian Dialect.
+          </li>
+          <li>
+            <strong>Vision Transformers Based Classification for Glaucomatous Eye Condition</strong> (ICPR 2022).
+          </li>
+        </ul>
+        <p>
+          Full list: <a href="https://scholar.google.com/citations?user=k28tatYAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+        </p>
+      </section>
+
+      <section id="projects" class="card">
+        <h2>Projects</h2>
+        <ul>
+          <li>RAG Management System for multi-modal retrieval and routing (NL2SQL/NL2SPARQL/vector retrieval).</li>
+          <li>Hotspot Detection in Large-Scale Graphs using GNNs.</li>
+          <li>AIROGS challenge: glaucoma screening and gradability assessment pipelines.</li>
+        </ul>
+      </section>
+
+      <section id="cv" class="card">
+        <h2>CV</h2>
+        <p>
+          Add your PDF CV to <code>docs/assets/cv.pdf</code> and this link will work in production.
+        </p>
+        <p><a href="./assets/cv.pdf" target="_blank" rel="noreferrer">Download CV (PDF)</a></p>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:aabde039@ucr.edu">aabde039@ucr.edu</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+19512752337">(951) 275-2337</a></p>
+        <p><strong>Address:</strong> Winston Chung Hall 362, University of California, Riverside</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/AhmedHamdi101" target="_blank" rel="noreferrer">AhmedHamdi101</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ahmed-moh-hamdi/" target="_blank" rel="noreferrer">ahmed-moh-hamdi</a></p>
+        <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=k28tatYAAAAJ&hl=en" target="_blank" rel="noreferrer">Profile</a></p>
+      </section>
+
+      <section class="card chat-card">
+        <h2>Ask about my work</h2>
+        <p class="hint">This assistant only answers from my uploaded/published portfolio data sources.</p>
+
+        <div id="chat-log" class="chat-log"></div>
+
+        <form id="chat-form">
+          <input id="chat-input" type="text" placeholder="Ask about publications, projects, education..." required />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script>
+      window.CHAT_API_URL = "https://your-worker-subdomain.workers.dev/api/chat";
+    </script>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
