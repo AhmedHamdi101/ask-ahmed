@@ -1,0 +1,4 @@
+LinkedIn public profile
+URL: https://www.linkedin.com/in/ahmed-moh-hamdi/
+Name: Ahmed Abdelmaguid
+Focus: AI/ML research, RAG, GNNs, data systems, computer vision applications.
