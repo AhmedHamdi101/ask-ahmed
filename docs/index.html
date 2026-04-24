@@ -7,56 +7,64 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="container">
-      <h1>Ahmed Abdelmaguid</h1>
-      <p>PhD Student • University of California, Riverside • RAG, GNNs, ML Systems</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div>
+          <h1>Ahmed Abdelmaguid</h1>
+          <p class="subtitle">PhD Student @ UCR • RAG, GNNs, ML Systems</p>
+        </div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#projects">Projects</a>
+          <a href="#cv">CV</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <main class="container grid">
+    <main class="container layout">
+      <section class="hero card">
+        <h2>Research Portfolio + AI Assistant</h2>
+        <p>
+          Welcome! This site highlights my research, projects, and publications. Use the AI assistant to ask
+          grounded questions about my profile.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#ai-chat">Ask the AI Assistant</a>
+          <a class="btn secondary" href="./assets/cv_ahmed_abdelmaguid.txt" download>Download CV</a>
+        </div>
+      </section>
+
       <section id="about" class="card">
         <h2>About Me</h2>
         <p>
           I am a PhD student in Computer Science at the Bourns College of Engineering, University of California,
-          Riverside (started October 2024). My work focuses on retrieval-augmented generation (RAG), graph machine
+          Riverside (Oct 2024 – Present). My work focuses on retrieval-augmented generation, graph machine
           learning, and scalable data systems.
-        </p>
-        <p>
-          I am open for Summer 2026 full-time research/internship opportunities (June 13, 2026 to September 23, 2026).
         </p>
       </section>
 
       <section id="research" class="card">
-        <h2>Research</h2>
+        <h2>Research Focus</h2>
         <ul>
-          <li>RAG over heterogeneous sources (text, SQL, knowledge graphs, vector DBs, APIs).</li>
-          <li>Prompt decomposition and retrieval routing for multi-source QA systems.</li>
+          <li>RAG over heterogeneous sources: text, SQL, knowledge graphs, vector DBs, and APIs.</li>
+          <li>Prompt decomposition and routing for robust retrieval planning.</li>
           <li>Hotspot detection in large-scale graphs using GNN-based models.</li>
         </ul>
       </section>
 
       <section id="publications" class="card">
-        <h2>Publications</h2>
+        <h2>Selected Publications</h2>
         <ul>
-          <li>
-            <strong>SOLAR</strong> (ICDE 2026): Scalable Distributed Spatial Joins through Learning-based Optimization.
-          </li>
-          <li>
-            <strong>AraEGI</strong> (IEEE-ISCC 2024): Arabic Gender Identification Using Transformers for Egyptian Dialect.
-          </li>
-          <li>
-            <strong>Vision Transformers Based Classification for Glaucomatous Eye Condition</strong> (ICPR 2022).
-          </li>
+          <li><strong>SOLAR</strong> (ICDE 2026)</li>
+          <li><strong>AraEGI</strong> (IEEE-ISCC 2024)</li>
+          <li><strong>Vision Transformers Based Classification for Glaucomatous Eye Condition</strong> (ICPR 2022)</li>
         </ul>
         <p>
-          Full list: <a href="https://scholar.google.com/citations?user=k28tatYAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+          Full list on
+          <a href="https://scholar.google.com/citations?user=k28tatYAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>.
         </p>
       </section>
 
@@ -65,16 +73,14 @@
         <ul>
           <li>RAG Management System for multi-modal retrieval and routing (NL2SQL/NL2SPARQL/vector retrieval).</li>
           <li>Hotspot Detection in Large-Scale Graphs using GNNs.</li>
-          <li>AIROGS challenge: glaucoma screening and gradability assessment pipelines.</li>
+          <li>AIROGS challenge pipelines for glaucoma screening and data gradability.</li>
         </ul>
       </section>
 
       <section id="cv" class="card">
         <h2>CV</h2>
-        <p>
-          Add your PDF CV to <code>docs/assets/cv.pdf</code> and this link will work in production.
-        </p>
-        <p><a href="./assets/cv.pdf" target="_blank" rel="noreferrer">Download CV (PDF)</a></p>
+        <p>The CV is downloadable below. (Current deployed format: text)</p>
+        <p><a class="btn" href="./assets/cv_ahmed_abdelmaguid.txt" download>Download CV</a></p>
       </section>
 
       <section id="contact" class="card">
@@ -84,24 +90,35 @@
         <p><strong>Address:</strong> Winston Chung Hall 362, University of California, Riverside</p>
         <p><strong>GitHub:</strong> <a href="https://github.com/AhmedHamdi101" target="_blank" rel="noreferrer">AhmedHamdi101</a></p>
         <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ahmed-moh-hamdi/" target="_blank" rel="noreferrer">ahmed-moh-hamdi</a></p>
-        <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=k28tatYAAAAJ&hl=en" target="_blank" rel="noreferrer">Profile</a></p>
       </section>
 
-      <section class="card chat-card">
-        <h2>Ask about my work</h2>
-        <p class="hint">This assistant only answers from my uploaded/published portfolio data sources.</p>
+      <section id="ai-chat" class="card chat-card">
+        <div class="chat-title-row">
+          <h2>🤖 AI Portfolio Assistant</h2>
+          <span class="pill">RAG-powered</span>
+        </div>
+        <p class="hint">
+          Ask about publications, education, experience, projects, or skills. Answers are based on uploaded portfolio data.
+        </p>
+
+        <details class="config">
+          <summary>API connection settings</summary>
+          <label for="api-url-input">Worker API URL</label>
+          <input id="api-url-input" type="url" placeholder="https://your-worker.workers.dev/api/chat" />
+          <button id="save-api-url" type="button" class="btn secondary">Save API URL</button>
+        </details>
 
         <div id="chat-log" class="chat-log"></div>
 
         <form id="chat-form">
-          <input id="chat-input" type="text" placeholder="Ask about publications, projects, education..." required />
-          <button type="submit">Send</button>
+          <input id="chat-input" type="text" placeholder="Ask a question about Ahmed..." required />
+          <button type="submit" class="btn">Send</button>
         </form>
       </section>
     </main>
 
     <script>
-      window.CHAT_API_URL = "https://your-worker-subdomain.workers.dev/api/chat";
+      window.CHAT_API_URL = "";
     </script>
     <script src="./app.js" type="module"></script>
   </body>

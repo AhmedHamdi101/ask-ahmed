@@ -113,3 +113,21 @@ You only need:
 
 If you cannot deploy immediately, you can run docs site locally and hit a local worker dev URL (`wrangler dev`).
 Do not ship production with keys in frontend.
+
+### If your URL shows README instead of the website
+
+- In GitHub Pages settings, set **Folder** to `/docs` (recommended).
+- This repo also includes a root `index.html` redirect to `docs/` as fallback.
+
+
+## Chat not working? Quick fixes
+
+1. Open the website and expand **API connection settings** in the AI assistant panel.
+2. Paste your deployed worker URL ending with `/api/chat` and click **Save API URL**.
+3. Confirm Cloudflare Worker secret `MISTRAL_API_KEY` is set.
+4. Confirm `ALLOWED_ORIGIN` exactly matches your Pages URL (for example `https://ahmedhamdi101.github.io`).
+
+## CV download
+
+- Current downloadable CV file is available at `docs/assets/cv_ahmed_abdelmaguid.txt`.
+- Replace it with a PDF later (same folder) if desired.
