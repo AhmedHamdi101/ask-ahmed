@@ -83,7 +83,7 @@ export default {
       return withCors(new Response(null, { status: 204 }), allowedOrigin);
     }
 
-    if (url.pathname !== "/api/chat") {
+    if (!["/api/chat", "/chat"].includes(url.pathname)) {
       return withCors(new Response("Not found", { status: 404 }), allowedOrigin);
     }
 

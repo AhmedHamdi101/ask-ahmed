@@ -131,3 +131,9 @@ Do not ship production with keys in frontend.
 
 - Current downloadable CV file is available at `docs/assets/cv_ahmed_abdelmaguid.txt`.
 - Replace it with a PDF later (same folder) if desired.
+
+
+## Set API endpoint once (no repeated prompt)
+
+- Edit `docs/config.js` and set `window.CHAT_API_URL` to your deployed Worker `/api/chat` endpoint.
+- This is a one-time setup and removes the need to enter URL repeatedly in UI.

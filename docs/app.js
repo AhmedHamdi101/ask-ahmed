@@ -1,19 +1,6 @@
 const form = document.getElementById("chat-form");
 const input = document.getElementById("chat-input");
 const log = document.getElementById("chat-log");
-const apiInput = document.getElementById("api-url-input");
-const saveApiBtn = document.getElementById("save-api-url");
-
-const API_KEY = "portfolio_chat_api_url";
-
-function getApiUrl() {
-  const stored = localStorage.getItem(API_KEY);
-  return stored || window.CHAT_API_URL || "";
-}
-
-function setApiUrl(url) {
-  localStorage.setItem(API_KEY, url);
-}
 
 function addMessage(role, text, citations = []) {
   const div = document.createElement("div");
@@ -24,7 +11,7 @@ function addMessage(role, text, citations = []) {
   div.appendChild(body);
 
   if (citations.length) {
-    const meta = document.createElement("small");
+    const meta = document.createElement("div");
     meta.className = "meta";
     meta.textContent = `Sources: ${citations.join(" | ")}`;
     div.appendChild(meta);
@@ -32,26 +19,22 @@ function addMessage(role, text, citations = []) {
 
   log.appendChild(div);
   log.scrollTop = log.scrollHeight;
+  return div;
 }
 
-function showStartupMessage() {
-  const apiUrl = getApiUrl();
-  if (apiUrl) {
-    addMessage("bot", `Assistant ready. Connected endpoint: ${apiUrl}`);
-  } else {
-    addMessage(
-      "bot",
-      "Please set your Worker API URL in 'API connection settings' before using chat.",
-    );
-  }
+function addTyping() {
+  const typing = document.createElement("div");
+  typing.className = "msg bot";
+  typing.innerHTML = '<span class="typing"><span></span><span></span><span></span></span>';
+  log.appendChild(typing);
+  log.scrollTop = log.scrollHeight;
+  return typing;
 }
 
-saveApiBtn.addEventListener("click", () => {
-  const value = apiInput.value.trim();
-  if (!value) return;
-  setApiUrl(value);
-  addMessage("bot", "API URL saved. You can now chat with the assistant.");
-});
+addMessage(
+  "bot",
+  "Hi! I can answer questions about Ahmed’s research, education, experience, publications, and CV.",
+);
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -61,11 +44,13 @@ form.addEventListener("submit", async (e) => {
   addMessage("user", question);
   input.value = "";
 
-  const apiUrl = getApiUrl();
+  const apiUrl = window.CHAT_API_URL;
   if (!apiUrl) {
-    addMessage("bot", "Missing API URL. Open 'API connection settings' and save your Worker endpoint.");
+    addMessage("bot", "Chat endpoint is not configured yet.");
     return;
   }
+
+  const typing = addTyping();
 
   try {
     const res = await fetch(apiUrl, {
@@ -75,18 +60,16 @@ form.addEventListener("submit", async (e) => {
     });
 
     const data = await res.json().catch(() => ({}));
+    typing.remove();
 
     if (!res.ok) {
-      const detail = data?.detail || data?.error || `HTTP ${res.status}`;
-      throw new Error(detail);
+      throw new Error(data?.detail || data?.error || `HTTP ${res.status}`);
     }
 
     addMessage("bot", data.answer || "No answer returned.", data.citations || []);
   } catch (err) {
-    addMessage("bot", `Assistant error: ${err.message}`);
+    typing.remove();
+    addMessage("bot", "Sorry — I couldn’t reach the assistant right now. Please try again.");
     console.error(err);
   }
 });
-
-apiInput.value = getApiUrl();
-showStartupMessage();
