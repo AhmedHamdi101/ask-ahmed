@@ -9,9 +9,14 @@
   <body>
     <main class="page">
       <section class="hero card" id="top">
-        <p class="eyebrow">Personal Portfolio</p>
+        <div class="hero-topline">
+          <p class="eyebrow">Personal Portfolio</p>
+          <p class="hero-tag">Research & Industry</p>
+        </div>
+
         <h1>Ahmed Abdelmaguid</h1>
         <p class="title">Computer Science PhD Student | Databases | Information Retrieval | Large Language Models</p>
+
         <p class="about">
           I am a PhD student at the University of California, Riverside. My research focuses on scalable data systems,
           retrieval-augmented generation, graph learning, and practical AI for real-world data problems.
@@ -20,24 +25,24 @@
         <p class="availability">Available for Summer Internship Opportunities</p>
 
         <div class="contact-grid">
-          <p><strong>Email:</strong> <a href="mailto:aabde039@ucr.edu">aabde039@ucr.edu</a></p>
-          <p><strong>Location:</strong> Riverside, California, USA</p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ahmed-moh-hamdi/" target="_blank" rel="noreferrer">ahmed-moh-hamdi</a></p>
-          <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=k28tatYAAAAJ&hl=en" target="_blank" rel="noreferrer">Profile</a></p>
+          <p><span>Email</span><a href="mailto:aabde039@ucr.edu">aabde039@ucr.edu</a></p>
+          <p><span>Location</span>Riverside, California, USA</p>
+          <p><span>LinkedIn</span><a href="https://www.linkedin.com/in/ahmed-moh-hamdi/" target="_blank" rel="noreferrer">ahmed-moh-hamdi</a></p>
+          <p><span>Google Scholar</span><a href="https://scholar.google.com/citations?user=k28tatYAAAAJ&hl=en" target="_blank" rel="noreferrer">View Profile</a></p>
         </div>
 
         <div class="cta-row">
-          <a class="btn" href="./assets/cv_ahmed_abdelmaguid.txt" download>Download CV</a>
-          <a class="btn" href="mailto:aabde039@ucr.edu">Contact Me</a>
-          <a class="btn" href="https://www.linkedin.com/in/ahmed-moh-hamdi/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="btn" href="https://scholar.google.com/citations?user=k28tatYAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+          <a class="btn" href="./assets/cv_ahmed_abdelmaguid.pdf" download>Download CV</a>
+          <a class="btn btn-ghost" href="mailto:aabde039@ucr.edu">Contact Me</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/ahmed-moh-hamdi/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://scholar.google.com/citations?user=k28tatYAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
         </div>
       </section>
 
       <section class="chat-section card" id="chat">
         <div class="chat-header">
           <h2>AI Assistant</h2>
-          <span class="status">Knowledge-grounded chat</span>
+          <span class="status">Live Q&A</span>
         </div>
         <p class="chat-subtitle">Hi! I can answer questions about Ahmed’s research, education, experience, publications, and CV.</p>
 
@@ -45,16 +50,42 @@
 
         <form id="chat-form" class="chat-form">
           <input id="chat-input" type="text" placeholder="Ask a question..." required />
-          <button type="submit" class="btn send">Send</button>
+          <button type="submit" id="send-btn" class="btn send">Send</button>
         </form>
       </section>
 
       <section class="nav-cards" id="links">
-        <a class="mini-card" href="#top">Research</a>
-        <a class="mini-card" href="#top">Education</a>
-        <a class="mini-card" href="./assets/cv_ahmed_abdelmaguid.txt" download>Download CV</a>
-        <a class="mini-card" href="https://www.linkedin.com/in/ahmed-moh-hamdi/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a class="mini-card" href="https://scholar.google.com/citations?user=k28tatYAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+        <a class="mini-card" href="#research">
+          <strong>Research</strong>
+          <span>Focus areas and publication themes</span>
+        </a>
+        <a class="mini-card" href="#education">
+          <strong>Education</strong>
+          <span>Current degree and academic training</span>
+        </a>
+        <a class="mini-card" href="./assets/cv_ahmed_abdelmaguid.pdf" download>
+          <strong>Download CV</strong>
+          <span>Latest CV in text format</span>
+        </a>
+        <a class="mini-card" href="https://www.linkedin.com/in/ahmed-moh-hamdi/" target="_blank" rel="noreferrer">
+          <strong>LinkedIn</strong>
+          <span>Professional profile and updates</span>
+        </a>
+        <a class="mini-card" href="https://scholar.google.com/citations?user=k28tatYAAAAJ&hl=en" target="_blank" rel="noreferrer">
+          <strong>Google Scholar</strong>
+          <span>Publications and citation record</span>
+        </a>
+      </section>
+
+      <section class="info-grid" aria-label="Quick profile details">
+        <article class="card info-card" id="research">
+          <h3>Research</h3>
+          <p>Databases, Information Retrieval, Retrieval-Augmented Generation, and practical large language model systems.</p>
+        </article>
+        <article class="card info-card" id="education">
+          <h3>Education</h3>
+          <p>PhD in Computer Science at the University of California, Riverside, with a focus on scalable AI and data systems.</p>
+        </article>
       </section>
     </main>
 
