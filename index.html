@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting…</title>
+    <script>
+      // Redirect root project page to docs/ to avoid README rendering as homepage.
+      const path = window.location.pathname;
+      if (!path.endsWith('/docs/') && !path.endsWith('/docs/index.html')) {
+        const cleaned = path.endsWith('/') ? path : `${path}/`;
+        window.location.replace(`${cleaned}docs/`);
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to site…</p>
+    <p>If not redirected, open <a href="./docs/">./docs/</a>.</p>
+  </body>
+</html>

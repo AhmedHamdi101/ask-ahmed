@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed Abdelmaguid | Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero card" id="top">
+        <p class="eyebrow">Personal Portfolio</p>
+        <h1>Ahmed Abdelmaguid</h1>
+        <p class="title">Computer Science PhD Student | Databases | Information Retrieval | Large Language Models</p>
+        <p class="about">
+          I am a PhD student at the University of California, Riverside. My research focuses on scalable data systems,
+          retrieval-augmented generation, graph learning, and practical AI for real-world data problems.
+        </p>
+
+        <p class="availability">Available for Summer Internship Opportunities</p>
+
+        <div class="contact-grid">
+          <p><strong>Email:</strong> <a href="mailto:aabde039@ucr.edu">aabde039@ucr.edu</a></p>
+          <p><strong>Location:</strong> Riverside, California, USA</p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ahmed-moh-hamdi/" target="_blank" rel="noreferrer">ahmed-moh-hamdi</a></p>
+          <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=k28tatYAAAAJ&hl=en" target="_blank" rel="noreferrer">Profile</a></p>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn" href="./assets/cv_ahmed_abdelmaguid.txt" download>Download CV</a>
+          <a class="btn" href="mailto:aabde039@ucr.edu">Contact Me</a>
+          <a class="btn" href="https://www.linkedin.com/in/ahmed-moh-hamdi/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="https://scholar.google.com/citations?user=k28tatYAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+        </div>
+      </section>
+
+      <section class="chat-section card" id="chat">
+        <div class="chat-header">
+          <h2>AI Assistant</h2>
+          <span class="status">Knowledge-grounded chat</span>
+        </div>
+        <p class="chat-subtitle">Hi! I can answer questions about Ahmed’s research, education, experience, publications, and CV.</p>
+
+        <div id="chat-log" class="chat-log" aria-live="polite"></div>
+
+        <form id="chat-form" class="chat-form">
+          <input id="chat-input" type="text" placeholder="Ask a question..." required />
+          <button type="submit" class="btn send">Send</button>
+        </form>
+      </section>
+
+      <section class="nav-cards" id="links">
+        <a class="mini-card" href="#top">Research</a>
+        <a class="mini-card" href="#top">Education</a>
+        <a class="mini-card" href="./assets/cv_ahmed_abdelmaguid.txt" download>Download CV</a>
+        <a class="mini-card" href="https://www.linkedin.com/in/ahmed-moh-hamdi/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="mini-card" href="https://scholar.google.com/citations?user=k28tatYAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+      </section>
+    </main>
+
+    <script src="./config.js"></script>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

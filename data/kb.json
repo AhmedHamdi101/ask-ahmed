@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cv_ahmed_abdelmaguid.txt-1",
+    "source": "cv_ahmed_abdelmaguid.txt",
+    "section": "CV",
+    "text": "Ahmed Abdelmaguid\nEmail: aabde039@ucr.edu\nGithub: https://github.com/AhmedHamdi101\nMobile: (951) 275-2337\nLinkedIn: https://www.linkedin.com/in/ahmed-moh-hamdi/\nGoogle Scholar: https://scholar.google.com/citations?user=k28tatYAAAAJ&hl=en\nAvailability: Open for Summer 2026 Research or Internship Positions (Full-Time)\nStart: June 13, 2026 or later\nEnd: September 23, 2026 or before\n\nAddress:\nWinston Chung Hall 362, University of California, Riverside\n\nEducation\n- PhD in Computer Science, Bourns College, University of California Riverside, Oct 2024 - Present\n- Master of Science in Computer and Systems Engineering, Faculty of Engineering, Alexandria University, Sep 2021 - Jun 2024\n  Thesis: Gender Identification in Text using Deep Learning Techniques.\n  Relevant Courses: Graph Machine Learning, Natural Language Processing, Image Segmentation, Edge Machine Learning, Database Management Systems\n- Bachelor of Science in Computer and Communication Engineering, Faculty of Engineering, Alexandria",
+    "url": null
+  },
+  {
+    "id": "cv_ahmed_abdelmaguid.txt-2",
+    "source": "cv_ahmed_abdelmaguid.txt",
+    "section": "CV",
+    "text": "University, Sep 2016 - Jun 2021\n\nExperience\n- Teaching Assistant (TA) & Graduate Student Researcher (GSR), University of California, Riverside, Oct 2024 - Present\n  TA - CS 236: Database Management Systems.\n  GSR - Research on Retrieval-Augmented Generation (RAG) and GNNs.\n- Research and Development Engineer, Applied Innovation Center, Egypt, Sep 2021 - Aug 2024\n  Projects: Glaucoma detection through fundus imagery, urban growth and property wealth estimation, land change detection.\n\nPublications\n- SOLAR: Scalable Distributed Spatial Joins through Learning-based Optimization (ICDE 2026)\n- AraEGI: Arabic Gender Identification Using Transformers for Egyptian Dialect (IEEE-ISCC 2024)\n- Vision Transformers Based Classification for Glaucomatous Eye Condition (ICPR 2022)\n\nSkills\n- Languages: Python, C/C++, Java\n- Frameworks/Libraries: PyTorch, TensorFlow, PyTorch Lightning, TorchGeo, OpenCV, NumPy, Pandas\n- Tools: Slurm, Kubernetes, Docker, Git, TorchServe\n\nPhD Projects\n- RAG Management Sys",
+    "url": null
+  },
+  {
+    "id": "cv_ahmed_abdelmaguid.txt-3",
+    "source": "cv_ahmed_abdelmaguid.txt",
+    "section": "CV",
+    "text": "tem for heterogeneous retrieval from text/SQL/graphs/APIs\n- Hotspot Detection in Large-Scale Graphs using GNNs\n\nPre-PhD Projects\n- AIROGS challenge: glaucoma screening and gradability classification\n- Omdena challenge: ethnicity-aware computer vision in broadcasts\n- Self-supervised pre-training for remote sensing tasks\n- Arabic gender re-writing using seq2seq Transformers\n- Gender detection in text using graph machine learning\n\nCertifications\n- Deep Learning Specialization (Coursera)\n- Fundamentals of Reinforcement Learning (Coursera)\n- Artificial Intelligence Analyst (IBM)\n\nLanguages\n- Arabic (Native)\n- English (IELTS 8.0)\n- French (Intermediate)",
+    "url": null
+  },
+  {
+    "id": "google_scholar_profile.txt-1",
+    "source": "google_scholar_profile.txt",
+    "section": "Publications",
+    "text": "Google Scholar profile\nURL: https://scholar.google.com/citations?user=k28tatYAAAAJ&hl=en\nName: Ahmed Abdelmaguid\nUse this source for publication listings and citation profile.",
+    "url": null
+  },
+  {
+    "id": "linkedin_profile.txt-1",
+    "source": "linkedin_profile.txt",
+    "section": "Professional Profile",
+    "text": "LinkedIn public profile\nURL: https://www.linkedin.com/in/ahmed-moh-hamdi/\nName: Ahmed Abdelmaguid\nFocus: AI/ML research, RAG, GNNs, data systems, computer vision applications.",
+    "url": null
+  }
+]
