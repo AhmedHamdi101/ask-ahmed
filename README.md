@@ -16,7 +16,7 @@ These are compiled into `data/kb.json` for chatbot retrieval.
 
 ## Architecture
 
-- **Frontend (GitHub Pages static)**: `frontend/`
+- **Frontend (GitHub Pages static)**: `docs/`
 - **Backend API (free serverless)**: Cloudflare Worker in `backend/cloudflare-worker/`
 - **RAG knowledge base**: `data/kb.json` built from `data/raw/*`
 - **LLM provider**: Mistral API (`mistral-small-latest` by default)
@@ -74,16 +74,16 @@ You only need:
    ```bash
    wrangler deploy
    ```
-5. Copy deployed worker URL and put it in `frontend/index.html` as `window.CHAT_API_URL`.
+5. Copy deployed worker URL and put it in `docs/index.html` as `window.CHAT_API_URL`.
 
-## Deploy frontend on GitHub Pages
+## Deploy docs site on GitHub Pages
 
 1. Push this repo to GitHub.
 2. In GitHub repo: **Settings → Pages**.
 3. Under **Build and deployment**, choose:
    - Source: `Deploy from a branch`
    - Branch: `main`
-   - Folder: `/ (root)`
+   - Folder: `/docs`
 4. Save.
 5. Your site URL will be:
    - `https://<your-github-username>.github.io/<repo-name>/` (project page)
@@ -111,5 +111,5 @@ You only need:
 
 ## Optional no-backend local demo (for testing only)
 
-If you cannot deploy immediately, you can run frontend locally and hit a local worker dev URL (`wrangler dev`).
+If you cannot deploy immediately, you can run docs site locally and hit a local worker dev URL (`wrangler dev`).
 Do not ship production with keys in frontend.
