@@ -1,0 +1,8 @@
+name = "portfolio-chat-api"
+main = "worker.js"
+compatibility_date = "2026-04-24"
+
+# Set these via Wrangler secrets/vars, never in git.
+# wrangler secret put MISTRAL_API_KEY
+# wrangler secret put ALLOWED_ORIGIN
+# wrangler secret put MISTRAL_MODEL  # e.g. mistral-small-latest

@@ -1,0 +1,57 @@
+Ahmed Abdelmaguid
+Email: aabde039@ucr.edu
+Github: https://github.com/AhmedHamdi101
+Mobile: (951) 275-2337
+LinkedIn: https://www.linkedin.com/in/ahmed-moh-hamdi/
+Google Scholar: https://scholar.google.com/citations?user=k28tatYAAAAJ&hl=en
+Availability: Open for Summer 2026 Research or Internship Positions (Full-Time)
+Start: June 13, 2026 or later
+End: September 23, 2026 or before
+
+Address:
+Winston Chung Hall 362, University of California, Riverside
+
+Education
+- PhD in Computer Science, Bourns College, University of California Riverside, Oct 2024 - Present
+- Master of Science in Computer and Systems Engineering, Faculty of Engineering, Alexandria University, Sep 2021 - Jun 2024
+  Thesis: Gender Identification in Text using Deep Learning Techniques.
+  Relevant Courses: Graph Machine Learning, Natural Language Processing, Image Segmentation, Edge Machine Learning, Database Management Systems
+- Bachelor of Science in Computer and Communication Engineering, Faculty of Engineering, Alexandria University, Sep 2016 - Jun 2021
+
+Experience
+- Teaching Assistant (TA) & Graduate Student Researcher (GSR), University of California, Riverside, Oct 2024 - Present
+  TA - CS 236: Database Management Systems.
+  GSR - Research on Retrieval-Augmented Generation (RAG) and GNNs.
+- Research and Development Engineer, Applied Innovation Center, Egypt, Sep 2021 - Aug 2024
+  Projects: Glaucoma detection through fundus imagery, urban growth and property wealth estimation, land change detection.
+
+Publications
+- SOLAR: Scalable Distributed Spatial Joins through Learning-based Optimization (ICDE 2026)
+- AraEGI: Arabic Gender Identification Using Transformers for Egyptian Dialect (IEEE-ISCC 2024)
+- Vision Transformers Based Classification for Glaucomatous Eye Condition (ICPR 2022)
+
+Skills
+- Languages: Python, C/C++, Java
+- Frameworks/Libraries: PyTorch, TensorFlow, PyTorch Lightning, TorchGeo, OpenCV, NumPy, Pandas
+- Tools: Slurm, Kubernetes, Docker, Git, TorchServe
+
+PhD Projects
+- RAG Management System for heterogeneous retrieval from text/SQL/graphs/APIs
+- Hotspot Detection in Large-Scale Graphs using GNNs
+
+Pre-PhD Projects
+- AIROGS challenge: glaucoma screening and gradability classification
+- Omdena challenge: ethnicity-aware computer vision in broadcasts
+- Self-supervised pre-training for remote sensing tasks
+- Arabic gender re-writing using seq2seq Transformers
+- Gender detection in text using graph machine learning
+
+Certifications
+- Deep Learning Specialization (Coursera)
+- Fundamentals of Reinforcement Learning (Coursera)
+- Artificial Intelligence Analyst (IBM)
+
+Languages
+- Arabic (Native)
+- English (IELTS 8.0)
+- French (Intermediate)
